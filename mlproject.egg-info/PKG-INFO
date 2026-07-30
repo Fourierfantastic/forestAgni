@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: mlproject
+Version: 0.0.1
+Author: Sonu kr
+Author-email: sonuk165551@gmail.com
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
