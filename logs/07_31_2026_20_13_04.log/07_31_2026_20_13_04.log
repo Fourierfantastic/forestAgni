@@ -1,0 +1,10 @@
+[ 2026-07-31 20:13:04,438 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-07-31 20:13:04,439 ] 97 werkzeug - INFO -  * Debugger PIN: 814-430-450
+[ 2026-07-31 20:13:23,121 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:13:23] "GET / HTTP/1.1" 200 -
+[ 2026-07-31 20:13:29,786 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:13:29] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-07-31 20:13:29,858 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:13:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-07-31 20:13:29,859 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:13:29] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-07-31 20:14:59,813 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:14:59] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-07-31 20:14:59,883 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:14:59] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-07-31 20:14:59,886 ] 97 werkzeug - INFO - 127.0.0.1 - - [31/Jul/2026 20:14:59] "GET /static/images/forest.jpg HTTP/1.1" 200 -
+[ 2026-07-31 20:19:09,222 ] 97 werkzeug - INFO -  * Detected change in '/home/sonu/Desktop/PROJECT/FOREST_AGNI/app.py', reloading

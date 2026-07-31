@@ -46,8 +46,24 @@ def predict_datapoint():
         print("Mid Prediction")
         results=predict_pipeline.predict(pred_df)
         print("after Prediction")
-        return render_template('home.html',results=results[0])
-    
+        fwi = round(float(results[0]),2)
+
+    if fwi < 5:
+         danger = "🟢 Very Low"
+    elif fwi < 15:
+        danger = "🟡 Low to Moderate"
+    elif fwi < 30:
+        danger = "🟠 High"
+    elif fwi < 45:
+        danger = "🔴 Very High"
+    else:
+        danger = "🚨 Extreme"
+
+    return render_template(
+    "home.html",
+    results=fwi,
+    danger=danger
+)
 
 if __name__=="__main__":
     app.run(host="0.0.0.0",debug=True)        

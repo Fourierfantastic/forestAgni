@@ -77,15 +77,18 @@ Predict FWI
 </button>
 
 </form>
-
 {% if results %}
 
 <div class="result">
 
-Predicted FWI : {{ results }}
+    <h2>🔥 Predicted FWI : {{ results }}</h2>
+
+    <h2>
+        Fire Danger Level :
+        <span class="danger">{{ danger }}</span>
+    </h2>
 
 </div>
-
 {% endif %}
 
 </div>
