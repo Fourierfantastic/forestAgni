@@ -3,5 +3,6 @@ pandas
 seaborn
 scikit-learn
 matplotlib
-
+dill
+flask
 -e .
