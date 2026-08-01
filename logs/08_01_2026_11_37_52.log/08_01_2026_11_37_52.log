@@ -1,0 +1,12 @@
+[ 2026-08-01 11:37:52,072 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 11:37:52,073 ] 97 werkzeug - INFO -  * Debugger PIN: 122-737-608
+[ 2026-08-01 11:38:03,058 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:38:03] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 11:38:16,414 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:38:16] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 11:38:16,487 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:38:16] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-08-01 11:38:16,489 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:38:16] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:38:33,712 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:38:33] "GET /current_weather?lat=25.2594783&lon=87.0394882 HTTP/1.1" 200 -
+[ 2026-08-01 11:39:41,482 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:39:41] "[35m[1mPOST /predictdata HTTP/1.1[0m" 500 -
+[ 2026-08-01 11:39:41,550 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:39:41] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:39:41,554 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:39:41] "[36mGET /predictdata?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:39:41,665 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:39:41] "GET /predictdata?__debugger__=yes&cmd=resource&f=console.png&s=3UIUZ4RCEtWFrgAMN62N HTTP/1.1" 200 -
+[ 2026-08-01 11:43:30,882 ] 97 werkzeug - INFO -  * Detected change in '/home/sonu/Desktop/PROJECT/FOREST_AGNI/app.py', reloading

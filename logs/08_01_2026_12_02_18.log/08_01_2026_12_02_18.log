@@ -1,0 +1,15 @@
+[ 2026-08-01 12:02:18,229 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 12:02:18,230 ] 97 werkzeug - INFO -  * Debugger PIN: 122-737-608
+[ 2026-08-01 12:02:27,903 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:02:27] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 12:02:37,485 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:02:37] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 12:02:37,575 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:02:37] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-08-01 12:02:37,577 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:02:37] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 12:02:50,318 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:02:50] "GET /current_weather?city=delhi HTTP/1.1" 200 -
+[ 2026-08-01 12:03:13,452 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:03:13] "GET /current_weather?city=bihar HTTP/1.1" 200 -
+[ 2026-08-01 12:03:26,356 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:03:26] "GET /current_weather?city=Madhubani HTTP/1.1" 200 -
+[ 2026-08-01 12:04:49,719 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:04:49] "GET /current_weather?city=Phoenix HTTP/1.1" 200 -
+[ 2026-08-01 12:04:54,959 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:04:54] "GET /current_weather?city=Phoenix HTTP/1.1" 200 -
+[ 2026-08-01 12:10:18,187 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:10:18] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 12:10:18,255 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:10:18] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 12:10:18,258 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:10:18] "GET /static/images/very_high.jpg HTTP/1.1" 200 -
+[ 2026-08-01 12:10:18,265 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 12:10:18] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -

@@ -1,12 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forest Fire Prediction</title>
 
-    <link rel="stylesheet"
-          href="{{ url_for('static',filename='css/style.css') }}">
+```
+<title>Forest Fire Prediction</title>
+
+<link rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}">
+```
+
 </head>
 
 <body>
@@ -19,83 +24,434 @@
 
 <div class="container">
 
+```
+<!-- LEFT SECTION -->
+
 <div class="left">
 
-<h1>Forest Fire Weather Index</h1>
+    <h1>Forest Fire Weather Index</h1>
 
-<p>
-Predict the Fire Weather Index using weather conditions
-and forest parameters with Machine Learning.
-</p>
+    <p>
+        Predict the Fire Weather Index using weather conditions
+        and forest parameters with Machine Learning.
+    </p>
 
-<img src="{{ url_for('static',filename='images/forest.jpg') }}">
+    <img src="{{ url_for('static', filename='images/forest.jpg') }}"
+         alt="Forest">
 
 </div>
+
+
+
+<!-- RIGHT SECTION -->
 
 <div class="right">
 
-<h2>Prediction Form</h2>
+    <h2>Prediction Form</h2>
 
-<form action="{{ url_for('predict_datapoint') }}" method="post">
 
-<input type="number" name="day" placeholder="Day (1-31)" min="1" max="31" required>
+    <!-- WORLD LOCATION SEARCH -->
 
-<input type="number" name="month" placeholder="Month (1-12)" min="1" max="12" required>
+    <div class="weather-search">
 
-<input type="number" name="year" value="2012" readonly>
+        <h3>🌍 Get Weather of Any Location</h3>
 
-<input type="number" step="0.1" name="Temperature" placeholder="Temperature">
+        <input
+            type="text"
+            id="city"
+            placeholder="Enter city e.g. Delhi, London, Tokyo"
+        >
 
-<input type="number" step="0.1" name="RH" placeholder="Relative Humidity">
+        <button
+            type="button"
+            id="weatherBtn">
 
-<input type="number" step="0.1" name="Ws" placeholder="Wind Speed">
+            🌦️ Get Weather
 
-<input type="number" step="0.1" name="Rain" placeholder="Rain">
+        </button>
 
-<input type="number" step="0.1" name="FFMC" placeholder="FFMC">
+        <p id="weatherStatus"></p>
 
-<input type="number" step="0.1" name="DMC" placeholder="DMC">
+    </div>
 
-<input type="number" step="0.1" name="DC" placeholder="DC">
 
-<input type="number" step="0.1" name="ISI" placeholder="ISI">
+    <form action="{{ url_for('predict_datapoint') }}"
+          method="post">
 
-<input type="number" step="0.1" name="BUI" placeholder="BUI">
 
-<select name="Region">
-<option value="0">Bejaia</option>
-<option value="1">Sidi Bel-Abbes</option>
-</select>
+        <!-- DAY -->
 
-<select name="Classes">
-<option value="fire">Fire</option>
-<option value="not fire">Not Fire</option>
-</select>
+        <input
+            type="number"
+            name="day"
+            placeholder="Day (1-31)"
+            min="1"
+            max="31"
+            required
+        >
 
-<button type="submit">
-Predict FWI
-</button>
 
-</form>
-{% if results %}
+        <!-- MONTH -->
 
-<div class="result">
+        <input
+            type="number"
+            name="month"
+            placeholder="Month (1-12)"
+            min="1"
+            max="12"
+            required
+        >
 
-    <h2>🔥 Predicted FWI : {{ results }}</h2>
 
-    <h2>
-        Fire Danger Level :
-        <span class="danger">{{ danger }}</span>
-    </h2>
+        <!-- YEAR -->
 
-    <img src="{{url_for('static',filename='images/' + image)}}" class="danger-image">
+        <input
+            type="number"
+            name="year"
+            value="2012"
+            readonly
+        >
+
+
+
+        <!-- TEMPERATURE -->
+
+        <input
+            type="number"
+            id="Temperature"
+            step="0.1"
+            name="Temperature"
+            placeholder="Temperature °C"
+            required
+        >
+
+
+
+        <!-- HUMIDITY -->
+
+        <input
+            type="number"
+            id="RH"
+            step="0.1"
+            name="RH"
+            placeholder="Relative Humidity (%)"
+            required
+        >
+
+
+
+        <!-- WIND SPEED -->
+
+        <input
+            type="number"
+            id="Ws"
+            step="0.1"
+            name="Ws"
+            placeholder="Wind Speed"
+            required
+        >
+
+
+
+        <!-- RAIN -->
+
+        <input
+            type="number"
+            id="Rain"
+            step="0.1"
+            name="Rain"
+            placeholder="Rain (mm)"
+            required
+        >
+
+
+
+        <!-- FFMC -->
+
+        <input
+            type="number"
+            step="0.1"
+            name="FFMC"
+            placeholder="FFMC"
+            required
+        >
+
+
+
+        <!-- DMC -->
+
+        <input
+            type="number"
+            step="0.1"
+            name="DMC"
+            placeholder="DMC"
+            required
+        >
+
+
+
+        <!-- DC -->
+
+        <input
+            type="number"
+            step="0.1"
+            name="DC"
+            placeholder="DC"
+            required
+        >
+
+
+
+        <!-- ISI -->
+
+        <input
+            type="number"
+            step="0.1"
+            name="ISI"
+            placeholder="ISI"
+            required
+        >
+
+
+
+        <!-- BUI -->
+
+        <input
+            type="number"
+            step="0.1"
+            name="BUI"
+            placeholder="BUI"
+            required
+        >
+
+
+
+        <!-- REGION -->
+
+        <select name="Region" required>
+
+            <option value="" disabled selected>
+                Select Region
+            </option>
+
+            <option value="0">
+                Bejaia
+            </option>
+
+            <option value="1">
+                Sidi Bel-Abbes
+            </option>
+
+        </select>
+
+
+
+        <!-- CLASS -->
+
+        <select name="Classes" required>
+
+            <option value="" disabled selected>
+                Select Class
+            </option>
+
+            <option value="fire">
+                Fire
+            </option>
+
+            <option value="not fire">
+                Not Fire
+            </option>
+
+        </select>
+
+
+
+        <!-- PREDICT BUTTON -->
+
+        <button type="submit">
+
+            🔥 Predict FWI
+
+        </button>
+
+
+    </form>
+
+
+
+    <!-- RESULT -->
+
+    {% if results %}
+
+    <div class="result">
+
+
+        <h2>
+
+            🔥 Predicted FWI :
+            {{ results }}
+
+        </h2>
+
+
+        <h2>
+
+            Fire Danger Level :
+
+            <span class="danger">
+
+                {{ danger }}
+
+            </span>
+
+        </h2>
+
+
+        <img
+            src="{{ url_for('static', filename='images/' + image) }}"
+            class="danger-image"
+            alt="Fire Danger">
+
+    </div>
+
+
+    {% endif %}
+
 
 </div>
-{% endif %}
+```
 
 </div>
 
-</div>
+<!-- JAVASCRIPT -->
+
+<script>
+
+
+document
+.getElementById("weatherBtn")
+.addEventListener("click", function(){
+
+
+    let city =
+        document
+        .getElementById("city")
+        .value
+        .trim();
+
+
+    let status =
+        document
+        .getElementById("weatherStatus");
+
+
+
+    /* CHECK EMPTY CITY */
+
+
+    if(city === ""){
+
+        alert("Please enter a city name.");
+
+        return;
+
+    }
+
+
+
+    /* SHOW LOADING */
+
+
+    status.innerHTML =
+        "⏳ Fetching weather...";
+
+
+
+    /* CALL FLASK API */
+
+
+    fetch(
+        `/current_weather?city=${encodeURIComponent(city)}`
+    )
+
+
+    .then(response => response.json())
+
+
+    .then(data => {
+
+
+        /* CHECK ERROR */
+
+
+        if(data.error){
+
+            status.innerHTML =
+                "❌ " + data.error;
+
+            return;
+
+        }
+
+
+
+        /* AUTO FILL WEATHER */
+
+
+        document
+        .getElementById("Temperature")
+        .value =
+        data.temperature;
+
+
+        document
+        .getElementById("RH")
+        .value =
+        data.humidity;
+
+
+        document
+        .getElementById("Ws")
+        .value =
+        data.wind_speed;
+
+
+        document
+        .getElementById("Rain")
+        .value =
+        data.rain;
+
+
+
+        /* SUCCESS MESSAGE */
+
+
+        status.innerHTML =
+            "✅ Weather loaded for "
+            + (data.location || city);
+
+
+    })
+
+
+    .catch(error => {
+
+
+        console.log(error);
+
+
+        status.innerHTML =
+            "❌ Unable to fetch weather.";
+
+
+    });
+
+
+});
+
+
+</script>
 
 </body>
+
 </html>

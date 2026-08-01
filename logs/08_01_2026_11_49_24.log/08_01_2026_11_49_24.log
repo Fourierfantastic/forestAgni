@@ -1,0 +1,13 @@
+[ 2026-08-01 11:49:24,615 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 11:49:24,616 ] 97 werkzeug - INFO -  * Debugger PIN: 122-737-608
+[ 2026-08-01 11:49:33,293 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:49:33] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 11:49:42,490 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:49:42] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 11:49:42,579 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:49:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:49:42,582 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:49:42] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:49:49,409 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:49:49] "GET /current_weather?lat=25.2595027&lon=87.0394631 HTTP/1.1" 200 -
+[ 2026-08-01 11:50:38,871 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:50:38] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 11:50:38,951 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:50:38] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:50:38,954 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:50:38] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:50:38,955 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:50:38] "[36mGET /static/images/extreme.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 11:50:52,658 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 11:50:52] "GET /current_weather?lat=25.2595027&lon=87.0394631 HTTP/1.1" 200 -
+[ 2026-08-01 11:58:43,749 ] 97 werkzeug - INFO -  * Detected change in '/home/sonu/Desktop/PROJECT/FOREST_AGNI/app.py', reloading

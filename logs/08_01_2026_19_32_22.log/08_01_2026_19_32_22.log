@@ -1,0 +1,7 @@
+[ 2026-08-01 19:32:22,771 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 19:32:22,772 ] 97 werkzeug - INFO -  * Debugger PIN: 122-737-608
+[ 2026-08-01 19:32:32,839 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 19:32:32] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 19:32:40,671 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 19:32:40] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 19:32:40,795 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 19:32:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 19:32:40,798 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 19:32:40] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
+[ 2026-08-01 19:33:02,400 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 19:33:02] "GET /current_weather?city=Delhi HTTP/1.1" 200 -
