@@ -50,19 +50,25 @@ def predict_datapoint():
 
     if fwi < 5:
          danger = "🟢 Very Low"
+         image = "very_low.jpg"
     elif fwi < 15:
         danger = "🟡 Low to Moderate"
+        image = "low.jpg"
     elif fwi < 30:
         danger = "🟠 High"
+        image = "high.jpg"
     elif fwi < 45:
         danger = "🔴 Very High"
+        image = "very_high.jpg"
     else:
         danger = "🚨 Extreme"
+        image = "extreme.jpg"
 
     return render_template(
     "home.html",
     results=fwi,
-    danger=danger
+    danger=danger,
+    image = image
 )
 
 if __name__=="__main__":

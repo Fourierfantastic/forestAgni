@@ -1,0 +1,10 @@
+[ 2026-08-01 10:51:31,254 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2026-08-01 10:51:31,255 ] 97 werkzeug - INFO -  * Debugger PIN: 122-737-608
+[ 2026-08-01 10:51:41,914 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:51:41] "GET / HTTP/1.1" 200 -
+[ 2026-08-01 10:51:49,164 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:51:49] "GET /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 10:51:49,229 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:51:49] "GET /static/css/style.css HTTP/1.1" 200 -
+[ 2026-08-01 10:51:49,231 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:51:49] "GET /static/images/forest.jpg HTTP/1.1" 200 -
+[ 2026-08-01 10:52:59,207 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:52:59] "POST /predictdata HTTP/1.1" 200 -
+[ 2026-08-01 10:52:59,274 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:52:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[ 2026-08-01 10:52:59,276 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:52:59] "GET /static/images/extreme.jpg HTTP/1.1" 200 -
+[ 2026-08-01 10:52:59,278 ] 97 werkzeug - INFO - 127.0.0.1 - - [01/Aug/2026 10:52:59] "[36mGET /static/images/forest.jpg HTTP/1.1[0m" 304 -
